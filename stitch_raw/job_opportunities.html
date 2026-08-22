@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Job Opportunities - Pathfinder AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#e5eeff",
+                      "on-surface": "#0b1c30",
+                      "secondary-fixed-dim": "#6bd8cb",
+                      "surface-container-low": "#eff4ff",
+                      "on-secondary-container": "#006f66",
+                      "on-tertiary": "#ffffff",
+                      "secondary-container": "#86f2e4",
+                      "surface-variant": "#d3e4fe",
+                      "tertiary": "#571ac0",
+                      "on-primary-container": "#dad7ff",
+                      "on-primary": "#ffffff",
+                      "surface-bright": "#f8f9ff",
+                      "tertiary-fixed-dim": "#d0bcff",
+                      "surface-tint": "#4d44e3",
+                      "on-secondary-fixed": "#00201d",
+                      "tertiary-fixed": "#e9ddff",
+                      "surface-container-high": "#dce9ff",
+                      "tertiary-container": "#6f3dd9",
+                      "on-surface-variant": "#464555",
+                      "on-primary-fixed": "#0f0069",
+                      "inverse-primary": "#c3c0ff",
+                      "on-secondary-fixed-variant": "#005049",
+                      "surface-dim": "#cbdbf5",
+                      "on-error-container": "#93000a",
+                      "outline-variant": "#c7c4d8",
+                      "secondary": "#006a61",
+                      "secondary-fixed": "#89f5e7",
+                      "primary-fixed-dim": "#c3c0ff",
+                      "on-tertiary-fixed": "#23005c",
+                      "background": "#f8f9ff",
+                      "error": "#ba1a1a",
+                      "inverse-surface": "#213145",
+                      "primary-fixed": "#e2dfff",
+                      "surface": "#f8f9ff",
+                      "on-background": "#0b1c30",
+                      "primary-container": "#4f46e5",
+                      "on-tertiary-container": "#e3d5ff",
+                      "primary": "#3525cd",
+                      "on-tertiary-fixed-variant": "#5516be",
+                      "outline": "#777587",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "surface-container-highest": "#d3e4fe",
+                      "inverse-on-surface": "#eaf1ff",
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed-variant": "#3323cc",
+                      "error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "container-max": "1280px",
+                      "margin-desktop": "32px",
+                      "base": "8px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .ai-border-accent {
+            border-left: 4px solid #571ac0; /* Soft Violet/Tertiary for AI */
+        }
+        .ai-shadow {
+            box-shadow: 0 4px 12px -2px rgba(53, 37, 205, 0.1);
+        }
+        .ai-assist-btn {
+            background: linear-gradient(135deg, #3525cd 0%, #571ac0 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex">
+<!-- SideNavBar -->
+<nav class="hidden md:flex flex-col bg-surface-container-lowest dark:bg-surface-container-low fixed left-0 top-0 h-full w-[280px] border-r border-outline-variant py-base z-20">
+<div class="px-6 py-4 flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md font-extrabold text-primary dark:text-primary-fixed tracking-tight">Pathfinder AI</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Strategic Partner</p>
+</div>
+</div>
+<div class="flex-1 mt-6 px-4 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200 group" href="#">
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="dashboard">dashboard</span>
+<span class="font-label-md text-label-md">AI Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200 group" href="#">
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="description">description</span>
+<span class="font-label-md text-label-md">Resume Customizer</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200 group" href="#">
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="trending_up">trending_up</span>
+<span class="font-label-md text-label-md">Skill Gaps</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200 group" href="#">
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="school">school</span>
+<span class="font-label-md text-label-md">Learning Paths</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-primary font-bold bg-primary-container/10 border-r-4 border-primary group" href="#">
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="work" style="font-variation-settings: 'FILL' 1;">work</span>
+<span class="font-label-md text-label-md">Job Opportunities</span>
+</a>
+</div>
+<div class="px-6 mb-6">
+<button class="w-full py-3 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">upgrade</span>
+                Upgrade to Pro
+            </button>
+</div>
+<div class="px-4 border-t border-outline-variant pt-4 space-y-1">
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200 group" href="#">
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform text-[20px]" data-icon="help">help</span>
+<span class="font-label-md text-label-md">Help Center</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200 group" href="#">
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform text-[20px]" data-icon="logout">logout</span>
+<span class="font-label-md text-label-md">Logout</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Wrapper -->
+<div class="flex-1 md:ml-[280px] flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest dark:bg-surface-container-low shadow-sm dark:shadow-none border-b border-outline-variant sticky top-0 z-10">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-16 max-w-container-max mx-auto">
+<!-- Mobile Menu & Brand -->
+<div class="flex items-center gap-4 md:hidden">
+<button class="text-on-surface-variant p-2 -ml-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Pathfinder AI</span>
+</div>
+<!-- Desktop Search -->
+<div class="hidden md:flex items-center bg-surface w-96 rounded-full px-4 py-2 border border-outline-variant focus-within:border-primary focus-within:ring-2 focus-within:ring-primary-container/30 transition-all">
+<span class="material-symbols-outlined text-outline mr-2 text-[20px]">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-sm font-body-sm w-full placeholder-on-surface-variant/70 text-on-surface outline-none" placeholder="Search roles, skills, or companies..." type="text"/>
+</div>
+<!-- Actions & Profile -->
+<div class="flex items-center gap-2 md:gap-4">
+<button class="p-2 text-on-surface-variant hover:bg-surface-container dark:hover:bg-surface-variant rounded-full transition-colors duration-200 cursor-pointer active:scale-95">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container dark:hover:bg-surface-variant rounded-full transition-colors duration-200 cursor-pointer active:scale-95 hidden md:block">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant ml-2 cursor-pointer">
+<img alt="User profile photo" class="w-full h-full object-cover" data-alt="A professional headshot of a young woman with a warm, confident smile, wearing a neat navy blue blazer over a white blouse. The background is a brightly lit, modern office environment with subtle hints of glass partitions and indoor plants. The lighting is soft and flattering, typical of a high-quality corporate profile photo. Clean, modern, professional SaaS aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyUF8jnK2OCqnsa0mTQFO_7Vft9FuHmW0AJdkffSSyYeHU5PDKTqZ0XOl9LShZBiaUmRhHoX-x9YREo8UN5d-iQKOMNpdixGxMPnDNXqq09vrhHzjSIeO7KOJsMsA0RkZ7eMlLFh0Ha25F-g-CSKe96ENz58_vIo1xZqrg_0T_xnm-7WHX4l7klgjHw-Wc1PcWREAREG7vvVWP8LS1FqwFnOeQfAwU5mcgXSe12In9uAVz93uPba3q"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Page Content -->
+<main class="flex-1 p-margin-mobile md:p-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Header -->
+<div class="mb-8">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">Recommended Opportunities</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                    We've analyzed your recent skill gap progress and aligned these roles with your target trajectory towards a Senior Data Engineering position.
+                </p>
+</div>
+<!-- Main Layout Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Column: Jobs List (Takes 8 cols on large screens) -->
+<div class="lg:col-span-8 space-y-6">
+<!-- Filter Bar -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant shadow-sm flex flex-col md:flex-row gap-4 items-center">
+<div class="flex-1 flex gap-2 w-full">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[20px]">work_outline</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface border border-outline-variant rounded-lg text-body-sm focus:border-primary focus:ring-2 focus:ring-primary-container/20 outline-none transition-all" placeholder="Job Title or Keyword" type="text" value="Data Engineer"/>
+</div>
+<div class="relative flex-1 hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[20px]">location_on</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface border border-outline-variant rounded-lg text-body-sm focus:border-primary focus:ring-2 focus:ring-primary-container/20 outline-none transition-all" placeholder="Location" type="text" value="Remote"/>
+</div>
+</div>
+<div class="w-full md:w-auto flex items-center gap-3 border-t md:border-t-0 md:border-l border-outline-variant pt-3 md:pt-0 md:pl-4">
+<label class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">Match Score &gt; 80%</label>
+<input class="w-24 accent-secondary cursor-pointer" max="100" min="0" type="range" value="80"/>
+</div>
+</div>
+<!-- Job Cards -->
+<div class="space-y-4">
+<!-- AI Matched Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-6 ai-shadow ai-border-accent relative overflow-hidden group">
+<div class="absolute top-0 right-0 bg-tertiary-container text-on-tertiary px-3 py-1 rounded-bl-lg font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+                                AI Recommended
+                            </div>
+<div class="flex flex-col sm:flex-row gap-6">
+<!-- Logo & Score Mobile Stack -->
+<div class="flex justify-between sm:block">
+<div class="w-16 h-16 rounded-lg border border-outline-variant overflow-hidden flex-shrink-0 bg-surface flex items-center justify-center p-2">
+<img alt="Company Logo" class="w-full h-full object-contain" data-alt="A minimalist, modern corporate logo featuring a stylized blue hexagon with interconnected nodes, set against a pristine white background. The design is sleek, flat, and vector-style, suitable for an innovative tech or data analytics company. Bright, clear lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU1tmO50H8rZX4aUYThBKczKESKc1f5Dt_aCgSHmvavfJ3o4zPJLNAaz75g4sMEsNe4_dVNqQGc4TCP6UcTmRZt0OtfJi2Ir1GR1aw1ub4aW-knnPn9UM1cq6SNOgNwST91KggicXMkQyuu46j5KkQ7Ged0nXzD8jpkn2ruT3X7N89X6E8W_2lwrSd7WTbRHagtGVnZpjwV8GcXSYdKta3CaokA1VN8u-n-5gdBqJBe3fVxO6ElpeN"/>
+</div>
+<!-- Match Score Circle (Mobile) -->
+<div class="sm:hidden flex flex-col items-center justify-center">
+<div class="relative w-12 h-12 flex items-center justify-center rounded-full bg-secondary-container/20 border-2 border-secondary">
+<span class="font-label-md text-label-md text-secondary font-bold">94%</span>
+</div>
+</div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-body-lg font-semibold text-on-surface mb-1">Senior Data Engineer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+                                                TechNova Solutions
+                                                <span class="w-1 h-1 rounded-full bg-outline"></span>
+                                                Remote (US)
+                                            </p>
+</div>
+<!-- Match Score Circle (Desktop) -->
+<div class="hidden sm:flex flex-col items-center justify-center ml-4">
+<div class="relative w-14 h-14 flex items-center justify-center rounded-full bg-secondary-container/20 border-[3px] border-secondary">
+<span class="font-label-md text-label-md text-secondary font-bold">94%</span>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-1 uppercase tracking-wider">Match</span>
+</div>
+</div>
+<!-- AI Insight Snippet -->
+<div class="mt-4 bg-surface-container-low rounded-lg p-3 flex gap-3 border border-surface-variant">
+<span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong>Why it's a match:</strong> Leverages your 3+ years in Fintech data pipelines. Your recently completed Advanced Apache Spark certification perfectly bridges their required skill gap.
+                                        </p>
+</div>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded bg-surface border border-outline-variant font-label-sm text-label-sm text-on-surface-variant">Apache Spark</span>
+<span class="px-2.5 py-1 rounded bg-surface border border-outline-variant font-label-sm text-label-sm text-on-surface-variant">Python</span>
+<span class="px-2.5 py-1 rounded bg-secondary/10 border border-secondary/20 font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Verified Skill
+                                        </span>
+</div>
+<div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="text-body-sm font-body-sm text-on-surface-variant w-full sm:w-auto">
+                                            $140k - $175k <span class="mx-2">•</span> Posted 2 days ago
+                                        </div>
+<div class="flex gap-3 w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-4 py-2 rounded-lg border border-outline-variant text-on-surface font-label-md text-label-md hover:bg-surface transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+                                                Save
+                                            </button>
+<button class="flex-1 sm:flex-none ai-assist-btn text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:shadow-md transition-all flex items-center justify-center gap-2">
+                                                Quick Apply
+                                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Regular Job Card -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col sm:flex-row gap-6">
+<!-- Logo & Score Mobile Stack -->
+<div class="flex justify-between sm:block">
+<div class="w-16 h-16 rounded-lg border border-outline-variant overflow-hidden flex-shrink-0 bg-surface flex items-center justify-center p-2">
+<img alt="Company Logo" class="w-full h-full object-contain" data-alt="A clean, typographic corporate logo featuring a bold, sans-serif letter 'A' intertwined with a subtle green leaf motif. The design is modern, conveying growth and data sustainability. White background, high-contrast, flat vector aesthetic, professional corporate branding." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxRWv6pWXZSMw0s5vTocGp_Dtuei0sLlqpdEiDiMrptJOXtkhkxiQXE7SfiNakPQM3Yg-i0xOXgPA4cGD8KSjwbd8Ubt_4-eNEhaLuizeULI0lIS-o7AadznTI80uREIn9E_oHW8Mr41AiMz1Q3Znr9dPEMNEC4H2zojChyjv2dvB1urpJpZ3vCUftiMni6kN6-XqIC4PATsa_0HNXZigl1mlWF-vu1wcU_Nt1hMHxUZ1E0LUF0IkD"/>
+</div>
+<div class="sm:hidden flex flex-col items-center justify-center">
+<div class="relative w-12 h-12 flex items-center justify-center rounded-full border-2 border-outline-variant">
+<span class="font-label-md text-label-md text-on-surface font-bold">82%</span>
+</div>
+</div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-body-lg font-semibold text-on-surface mb-1">Data Infrastructure Engineer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+                                                Apex Analytics
+                                                <span class="w-1 h-1 rounded-full bg-outline"></span>
+                                                New York, NY (Hybrid)
+                                            </p>
+</div>
+<div class="hidden sm:flex flex-col items-center justify-center ml-4 opacity-70">
+<div class="relative w-14 h-14 flex items-center justify-center rounded-full border-[3px] border-outline-variant">
+<span class="font-label-md text-label-md text-on-surface font-bold">82%</span>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-1 uppercase tracking-wider">Match</span>
+</div>
+</div>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded bg-surface border border-outline-variant font-label-sm text-label-sm text-on-surface-variant">AWS</span>
+<span class="px-2.5 py-1 rounded bg-surface border border-outline-variant font-label-sm text-label-sm text-on-surface-variant">Snowflake</span>
+<span class="px-2.5 py-1 rounded border border-dashed border-tertiary-fixed-dim bg-surface font-label-sm text-label-sm text-tertiary flex items-center gap-1" title="Skill Gap Identified">
+<span class="material-symbols-outlined text-[12px]">track_changes</span> Kafka (Learning)
+                                        </span>
+</div>
+<div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="text-body-sm font-body-sm text-on-surface-variant w-full sm:w-auto">
+                                            $130k - $160k <span class="mx-2">•</span> Posted 5 days ago
+                                        </div>
+<div class="flex gap-3 w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-4 py-2 rounded-lg border border-outline-variant text-on-surface font-label-md text-label-md hover:bg-surface transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+                                                Save
+                                            </button>
+<button class="flex-1 sm:flex-none bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-primary/90 transition-colors flex items-center justify-center">
+                                                Apply
+                                            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Insights (Takes 4 cols on large screens) -->
+<div class="lg:col-span-4 space-y-6">
+<!-- Salary Insights Card -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-6 shadow-sm">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-secondary">monitoring</span>
+<h3 class="font-headline-md text-body-lg font-semibold text-on-surface">Market Trends</h3>
+</div>
+<div class="mb-6">
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Target Role</p>
+<p class="font-body-md text-body-md font-medium text-on-surface">Data Engineer (Senior)</p>
+</div>
+<div class="space-y-4">
+<div>
+<div class="flex justify-between text-body-sm font-body-sm mb-1">
+<span class="text-on-surface-variant">Average Salary (Remote)</span>
+<span class="font-semibold text-on-surface">$155k</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2">
+<div class="bg-secondary h-2 rounded-full" style="width: 75%"></div>
+</div>
+</div>
+<div class="pt-4 border-t border-outline-variant">
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-3">Trending Skills in Job Postings</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 rounded bg-surface border border-outline-variant font-label-sm text-label-sm text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-secondary">arrow_upward</span> Apache Iceberg
+                                    </span>
+<span class="px-2 py-1 rounded bg-surface border border-outline-variant font-label-sm text-label-sm text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-secondary">arrow_upward</span> dbt
+                                    </span>
+<span class="px-2 py-1 rounded bg-surface border border-outline-variant font-label-sm text-label-sm text-on-surface-variant">Snowflake</span>
+</div>
+</div>
+</div>
+</div>
+<!-- AI Resume Nudge -->
+<div class="bg-tertiary-fixed rounded-xl border border-tertiary-fixed-dim p-6 shadow-sm relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-tertiary/10 rounded-full blur-xl"></div>
+<h3 class="font-headline-md text-body-lg font-semibold text-on-surface mb-2 relative z-10 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">document_scanner</span>
+                            Resume Optimization
+                        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 relative z-10">
+                            Tailor your resume for <strong>Data Engineering</strong> roles to increase your match score by an estimated 12%.
+                        </p>
+<button class="w-full px-4 py-2 bg-tertiary text-on-tertiary rounded-lg font-label-md text-label-md hover:bg-tertiary/90 transition-colors relative z-10">
+                            Open Resume Customizer
+                        </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
